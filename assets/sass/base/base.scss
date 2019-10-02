@@ -1,0 +1,117 @@
+/* main.css */
+body {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: $COLOR-BLACK;
+    font-weight: 400;
+    overflow-x: hidden!important;
+    -webkit-font-smoothing: antialiased;
+    font-family: $OPENSANS;
+}
+p {
+    margin-bottom: 10px;
+}
+a {
+    color: $COLOR-CMC;
+}
+a:focus, a:hover {
+    text-decoration: none;
+}
+a:active, a:hover {
+    outline: 0;
+}
+.btn.focus, .btn:focus, .btn:hover {
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+:focus {
+    outline: none !important;
+}
+.nav > li > a:focus, .nav > li > a:hover, .nav > li.current-menu-item > a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #29699E;
+}
+.bg-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 10px;
+    font-family: $ROBOTO;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.subtitle-h3 {
+    font-size: 1.25rem;
+    margin-bottom: 45px;
+}
+.icon-column {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    svg {
+        margin-top: -1rem;
+        margin-right: 1rem;
+        font-size: 1.5625rem;
+    }
+    &__text {
+        h6 {
+            font-size: .875rem;
+            color: $COLOR-BLACK;
+            a {
+                color: $COLOR-BLACK;
+            }
+        }
+    }
+}
+.badge-circle {
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 0!important;
+    width: 1.25rem;
+    height: 1.25rem;
+    vertical-align: middle;
+    font-size: .75rem;
+    font-weight: 600;
+}
+.badge-cmc {
+    color: #fff;
+    background-color: $COLOR-CMC;
+}
+.image-overlay {
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+.fa-li {
+    left: -1em;
+}
+.text-cmc {
+    color: $COLOR-CMC;
+}
+.bg-cmc {
+   background-color: $COLOR-CMC;
+}
+.box-numero {
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    background-color: $COLOR-CMC;
+    box-shadow: 0 0 45px 0 rgba(0,0,0,.12);
+    text-align: center;
+    border-radius: 50%;
+    float: left;
+    font-weight: 700;
+    line-height: 30px;
+}

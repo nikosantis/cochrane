@@ -1,0 +1,35 @@
+.btn {
+    line-height: 1;
+    padding: .6rem .75rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0;
+}
+.btn-cmc {
+    color: #fff;
+    background-color: $COLOR-CMC;
+    border-color: $COLOR-CMC;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:hover {
+        color: #fff !important;
+        background-color: $COLOR-CMCH !important;
+        border-color: $COLOR-CMCH !important;
+    }
+}
+.btn-cmc.active {
+    background-color: $COLOR-CMCH;
+    border-color: $COLOR-CMCH;
+}
+.btn-reserva {
+    color: $COLOR-BLACK;
+    background-color: $COLOR-GREY2;
+    border-color: $COLOR-GREY2;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:hover, &:focus {
+        color: $COLOR-BLACK !important;
+        background-color: $COLOR-GREY3 !important;
+        border-color: $COLOR-GREY3 !important;
+    }
+}

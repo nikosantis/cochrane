@@ -1,0 +1,62 @@
+.main-home {
+    .hero {
+        .carousel-home {
+            position: relative;
+            &__item {
+                &__img {
+                    height: 400px;
+                }
+            }
+            .owl-nav {
+                position: absolute;
+                top: 35%;
+                left: 0;
+                right: 0;
+                .owl-prev, .owl-next {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 0;
+                    margin: 0;
+                    svg {
+                        color: #ffffff;
+                        vertical-align: -3px;
+                        font-size: 35px;
+                    }
+                }
+                .owl-prev {
+                    position: absolute;
+                    left: 0;
+                }
+                .owl-next {
+                    position: absolute;
+                    right: 0;
+                }
+                .owl-prev:hover, .owl-next:hover {
+                    background: $COLOR-CMC;
+                }
+            }
+            .owl-dots {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 100px;
+            }
+        }
+    }
+    .promo {
+        .carousel-promo {
+            margin-bottom: 35px;
+            @include MQ(md) {
+                margin-bottom: 0;
+            }
+            &__item {
+                &__img {
+                    height: 200px;
+                    @include MQ(md) {
+                        height: 292px;
+                    }
+                }
+            }
+        }
+    }
+}

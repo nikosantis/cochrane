@@ -1,0 +1,28 @@
+.laboratorio-examen{
+    .content {
+        .article {
+            &-content {
+                .labexam {
+                    &-header {
+                        .nav {
+                            .nav-item {
+                                margin: 2px;
+                            }
+                        }
+                    }
+                    &-content {
+                        &__titulo {
+                            margin-left: 50px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            font-size: 20px;
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

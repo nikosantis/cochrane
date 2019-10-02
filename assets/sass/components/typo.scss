@@ -1,0 +1,37 @@
+.main {
+    &-titulo {
+        &__col {
+        }
+    }
+    &-subtitulo {
+        &__col {
+            font-size: 1.25rem;
+        }
+    }
+    &-text {
+        &__col {
+            margin-bottom: 35px;
+        }
+    }
+}
+.article {
+    &-header {
+        margin-bottom: 35px;
+    }
+    h1:after, h2:after, h3:after {
+        content: " ";
+        position: relative;
+        top: 3px;
+        display: block;
+        height: 3px;
+        width: 40px;
+        background-color: $COLOR-CMC;
+    }
+    h2, h3, h4, h5, h6, ul, ol, blockquote {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    p {
+        font-size: 1rem;
+    }
+}

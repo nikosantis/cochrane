@@ -1,0 +1,95 @@
+.header {
+    &-topbar {
+        background-color: #F8F8F8;
+        border-bottom: 1px solid #eeeeee;
+        padding-left: 0;
+        padding-right: 0;
+        @include MQ(md) {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .topbar-text {
+            color: #999;
+            font-size: 0.8125rem;
+            a {
+                color: #999;
+                font-weight: 500;   
+            }
+        }
+        &__l {
+            text-align: center;
+            padding-left: 15px;
+            @include MQ(md) {
+                text-align: left;
+                padding-left: 35px;
+            }
+        }
+        &__r {
+            text-align: center;
+            padding-right: 15px;
+            @include MQ(md) {
+                text-align: right;
+                padding-right: 35px;
+            }
+            .list-inline {
+
+            }
+        }
+    }
+    .bg-light {
+        background-color: #ffffff!important;
+    }
+    .navbar {
+        padding: 0 16px;
+        &-brand {
+            padding-top: 0;
+            padding-bottom: 0;   
+            img {
+                width: 200px;
+            }
+        }
+        &-nav {
+            .nav-item {
+                margin: 0px 10px;
+                .nav-link {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    padding: 20px 0;
+                    font-family: $ROBOTO;
+                    font-size: 0.875rem;
+                }
+                &.active {
+                    .nav-link {
+                        border-bottom: 3px solid $COLOR-CMC;
+                    }
+                }
+            }
+            .dropdown-menu {
+                border-radius: 0;
+                
+                .dropdown-item {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    padding: 10px 20px;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 0.875rem;    
+                }
+            }
+        }
+    }
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        color: rgba(0,0,0,.7);
+        border-bottom: 3px solid $COLOR-CMC;
+    }
+    .navbar-sticky.sticky {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: -100px;
+        transform: translateY(100px);
+        z-index: 1030;
+        border-top: 0;
+        box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125);
+        transition: all 0.2s ease; 
+    }
+}

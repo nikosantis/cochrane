@@ -1,0 +1,23 @@
+@import 'utils/_media';
+@import 'utils/_variables';
+@import 'base/base.scss';
+
+@import 'components/buttons.scss';
+@import 'components/elements.scss';
+@import 'components/typo.scss';
+@import 'components/carousel.scss';
+@import 'components/widget.scss';
+@import 'components/form.scss';
+@import 'components/breadcrumb.scss';
+
+@import 'layouts/header.scss';
+@import 'layouts/footer.scss';
+@import 'layouts/novedades.scss';
+@import 'layouts/page.scss';
+
+@import 'pages/home.scss';
+@import 'pages/laboratorio.scss';
+@import 'pages/reserva.scss';
+@import 'pages/labexam.scss';
+@import 'pages/nosotros.scss';
+@import 'pages/enfermeria.scss';

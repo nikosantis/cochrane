@@ -1,0 +1,65 @@
+.main-home {
+    .hero {
+        height: 400px;
+        position: relative;
+    }
+    .heronav {
+        @include MQ(md) {
+            height: 200px;
+            margin-top: -100px;
+        }
+        &-links {
+            position: absolute;
+            z-index: 1;
+            top: -180px;
+            width: 100%;
+            right: 0;
+            @include MQ(md) {
+                width: 250px;
+            }
+            &__box {
+                width: 80%;
+                margin: auto;
+                @include MQ(md) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .about {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        @include MQ(md) {
+            padding-top: 90px;
+            padding-bottom: 90px;
+        }
+    }
+    .promo {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        .carousel-promo {
+            height: 200px;
+            @include MQ(md) {
+                height: 292px;
+            }
+        }
+        &-thumb {
+            width: 100%;
+            &__img {
+                width: 100%;
+                @include MQ(md) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .novedades {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        background-color: $COLOR-GREY;
+        @include MQ(md) {
+            padding-top: 90px;
+            padding-bottom: 90px;
+        }
+    }
+}

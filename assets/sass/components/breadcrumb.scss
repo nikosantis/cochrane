@@ -1,0 +1,29 @@
+.page {
+    .breadcrumb {
+        background-color: #ffffff;
+        margin-bottom: 0;
+        &-item {
+            a {
+                font-weight: 600;
+                text-transform: uppercase;
+                color: rgba($COLOR-BLACK,0.7);
+                font-size: 0.875rem;
+                &.active {
+                    color: $COLOR-BLACK;
+                }
+            }
+            svg {
+                font-size: 0.75rem;
+                vertical-align: -1px;
+                margin: 0 10px;
+                color: rgba($COLOR-BLACK,0.7);
+            }
+        }
+        .breadcrumb-item+.breadcrumb-item {
+            padding-left: 5px;
+        }
+        .breadcrumb-item+.breadcrumb-item::before {
+            content: none;
+        }
+    }
+}
